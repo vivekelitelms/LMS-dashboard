@@ -1,16 +1,23 @@
-import { useState } from 'react'
-
-import './App.css'
+import { useState } from 'react';
+import Dashboard from './Dashboard';
+import './App.css';
+import Menu from './Menubar';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      Hello World
-        
-    </>
-  )
+    <div>
+    <div >
+      
+        <Dashboard/>
+      </div>
+      <div>      <Menu/>
+</div>
+
+</div> 
+     
+  );
 }
 
-export default App
+export default App;
