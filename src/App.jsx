@@ -18,9 +18,9 @@ function App() {
       <div>
            <Menu/>
            </div>
-           <div>           <NotificationList/>
-           </div>
-           <Profile/>
+           <div> <NotificationList/></div>
+          <div><Profile/></div> 
+          
           
 </div>
  </div>

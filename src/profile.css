@@ -28,17 +28,27 @@
     font-size: 28px;  /* Size of the icon */
   }
 
-  .username{
-    cursor: pointer;
-    color:black;
-     position:absolute;
-     top:11.7%;
-     right:3%;
-     transition: transform 0.2s ease-in-out; /* Smooth scale effect on hover */
-    }
+  .icon-row{
+    display: flex;
+    flex-direction: row;
+    margin: 1.5%;
+    position: fixed;
+    top: 26px;
+    right: 6%;
+    
+  }
 
-  .username:hover{
-    transform: scale(1.1); /* Slightly grow when hovered */
+  .icon{
+    font-size: large;
+    margin: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Smooth scale effect on hover */
 
   }
+.icon:hover{
+    transform: scale(2.2); /* Slightly grow when hovered */
+
+}
+
+  
   

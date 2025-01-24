@@ -1,3 +1,7 @@
+body{
+  background: color #b7c2bc;
+}
+
 .compo{
   display: flex;
   flex-direction:column;
