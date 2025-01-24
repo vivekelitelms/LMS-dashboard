@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Dashboard from './Dashboard';
 import './App.css';
 import Menu from './Menubar';
+import Profile from './Profile';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,11 +10,15 @@ function App() {
   return (
     <div>
     <div >
-      
-        <Dashboard/>
+    <Dashboard/>
+        
       </div>
-      <div>      <Menu/>
+      <div>   
+           <Menu/>
+           <Profile/>
 </div>
+<div></div>
+
 
 </div> 
      

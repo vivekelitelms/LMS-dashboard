@@ -1,0 +1,44 @@
+/* Profile Component Styles */
+.profile-container {
+    margin:1.5% ;
+    position: fixed; /* Fixed positioning to always show at the top-right */
+    top: 20px;
+    right: 20px;
+    width: 55px;  /* Size of the circle */
+    height: 55px; /* Size of the circle */
+    border-radius: 50%;  /* Makes the container round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8F67E4; /* Background color (can change to any color) */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    cursor: pointer;  /* Makes it clickable */
+    transition: transform 0.2s ease-in-out; /* Smooth scale effect on hover */
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .profile-container:hover {
+    transform: scale(1.1); /* Slightly grow when hovered */
+  }
+  
+  .profile-icon {
+    color: whitesmoke;  /* White color for the icon */
+    font-size: 28px;  /* Size of the icon */
+  }
+
+  .username{
+    cursor: pointer;
+    color:black;
+     position:absolute;
+     top:11.5%;
+     right:2.6%;
+     transition: transform 0.2s ease-in-out; /* Smooth scale effect on hover */
+    }
+
+  .username:hover{
+    transform: scale(1.1); /* Slightly grow when hovered */
+
+  }
+  
