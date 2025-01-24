@@ -3,6 +3,7 @@ import Dashboard from './Dashboard';
 import './App.css';
 import Menu from './Menubar';
 import Profile from './Profile';
+import NotificationList from './progressList/NotificationList';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,16 +12,21 @@ function App() {
     <div>
     <div >
     <Dashboard/>
-        
-      </div>
-      <div>   
+        </div>
+
+      <div className='compo'>   
+      <div>
            <Menu/>
+           </div>
+           <div>           <NotificationList/>
+           </div>
            <Profile/>
+          
 </div>
-<div></div>
+ </div>
 
 
-</div> 
+
      
   );
 }

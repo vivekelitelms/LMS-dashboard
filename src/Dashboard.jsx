@@ -17,6 +17,7 @@ const Dashboard = () => {
         <li>Cources</li>
         <li>Tasks</li>
         <li>Groups</li>
+        <li>Assignments</li>
       </ul>
       <h2>Settings</h2>
       <ul>

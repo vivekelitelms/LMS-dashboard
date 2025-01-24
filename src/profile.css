@@ -32,8 +32,8 @@
     cursor: pointer;
     color:black;
      position:absolute;
-     top:11.5%;
-     right:2.6%;
+     top:11.7%;
+     right:3%;
      transition: transform 0.2s ease-in-out; /* Smooth scale effect on hover */
     }
 

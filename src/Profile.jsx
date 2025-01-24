@@ -10,7 +10,7 @@ const Profile = () => {
       <FaUser className="profile-icon" />
       </div>
      
-     <div> <p className="username" >Username</p></div>
+     <div> <p className="username" >Aniket</p></div>
      
     
     

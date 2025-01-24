@@ -1,0 +1,45 @@
+/* Container for the notification list */
+.notification-container {
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    margin-left: 22%;
+    margin-top: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Title styling */
+  .notification-title {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Remove default list styles */
+  .notification-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual notification item */
+  .notification-item {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 20px;
+    background-color: silver;
+    box-shadow: 4px 4px 4px rgba(2px, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for notification items */
+  .notification-item:hover {
+    transform: scale(1.02);
+    background-color: #8F67E4;
+  }
+  
