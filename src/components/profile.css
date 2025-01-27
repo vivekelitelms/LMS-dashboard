@@ -1,11 +1,11 @@
 /* Profile Component Styles */
 .profile-container {
-    margin:1.5% ;
+    margin:.5% ;
     position: fixed; /* Fixed positioning to always show at the top-right */
-    top: 20px;
+    top: 0px;
     right: 20px;
-    width: 55px;  /* Size of the circle */
-    height: 55px; /* Size of the circle */
+    width: 50px;  /* Size of the circle */
+    height: 50px; /* Size of the circle */
     border-radius: 50%;  /* Makes the container round */
     display: flex;
     justify-content: center;
@@ -25,16 +25,16 @@
   
   .profile-icon {
     color: whitesmoke;  /* White color for the icon */
-    font-size: 28px;  /* Size of the icon */
+    font-size: 25px;  /* Size of the icon */
   }
 
   .icon-row{
     display: flex;
     flex-direction: row;
-    margin: 1.5%;
+    margin: 1%;
     position: fixed;
-    top: 26px;
-    right: 6%;
+    top: 3px;
+    right: 5%;
     
   }
 
