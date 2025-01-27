@@ -2,10 +2,10 @@
 .profile-container {
     margin:.5% ;
     position: fixed; /* Fixed positioning to always show at the top-right */
-    top: 0px;
+    top: 4px;
     right: 20px;
-    width: 50px;  /* Size of the circle */
-    height: 50px; /* Size of the circle */
+    width: 40px;  /* Size of the circle */
+    height: 40px; /* Size of the circle */
     border-radius: 50%;  /* Makes the container round */
     display: flex;
     justify-content: center;
