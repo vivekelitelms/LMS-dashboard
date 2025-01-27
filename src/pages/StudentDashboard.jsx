@@ -2,7 +2,6 @@ import React from "react";
 import BaseLayout from "../layouts/BaseLayout";
 import { Card, CourseCard} from "../components/Card";
 import { FaClipboardList, FaFileAlt, FaClock, FaTimesCircle } from "react-icons/fa";
-import ProgressList from "../Tables/ProgressList";
 import CourseList from "../Tables/CourseList";
 
 export default function StudentDashboard() {

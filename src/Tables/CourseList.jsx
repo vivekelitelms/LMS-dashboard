@@ -4,11 +4,11 @@ import CourseProgressList from "./CourseProgressList";
 export default function CourseList() {
   // Sample course data
   const inProgressCourses = [
-    { name: "HTML", progress: 75 },
-    { name: "CSS", progress: 50 },
-    { name: "JavaScript", progress: 90 },
-    { name: "C++", progress: 65 },
-    { name: "JAVA", progress: 25 },
+    { name: "HTML",type:"E-learning", progress: 75 },
+    { name: "CSS",type:"E-learning", progress: 50 },
+    { name: "JavaScript", type:"E-learning",progress: 90 },
+    { name: "C++",type:"E-learning", progress: 65 },
+    { name: "JAVA", type:"E-learning",progress: 25 },
   ];
 
   const classroomCourses = [
@@ -23,7 +23,11 @@ export default function CourseList() {
     { name: "Python", progress: 80 },
     { name: "C++", progress: 90 },
     { name: "JAVASCRIPT", progress: 35 },
+    { name: "Devops", progress: 50 },
+
   ];
+
+
 
   // State to track the selected section
   const [selectedSection, setSelectedSection] = useState("in-progress");
@@ -60,6 +64,9 @@ export default function CourseList() {
             Transcript
           </button>
         </div>
+
+       
+        
 
         {/* Content based on selected section */}
         <div className="space-y-6">
