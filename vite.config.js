@@ -11,4 +11,9 @@ export default defineConfig({
       plugins: [tailwindcss, autoprefixer],
     },
   },
+
+  server: {
+    host: '0.0.0.0', // Allows access from the local network
+    port: 5173,      // Default port
+  },
 })

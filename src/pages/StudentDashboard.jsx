@@ -2,6 +2,7 @@ import React from "react";
 import BaseLayout from "../layouts/BaseLayout";
 import { Card, CourseCard} from "../components/Card";
 import { FaClipboardList, FaFileAlt, FaClock, FaTimesCircle } from "react-icons/fa";
+import CourseList from "../Tables/CourseList";
 
 export default function StudentDashboard() {
   return (
@@ -69,7 +70,9 @@ export default function StudentDashboard() {
             progress={70}
           />
         </div>
-
+<div className="">
+  <CourseList/>
+</div>
     </>
     </BaseLayout>
   );
