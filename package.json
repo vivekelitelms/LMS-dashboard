@@ -16,11 +16,8 @@
     "@mui/material": "^6.4.1",
     "@mui/x-date-pickers": "^7.24.1",
     "@mui/x-date-pickers-pro": "^7.24.1",
-<<<<<<< HEAD
     "@syncfusion/ej2-react-charts": "^28.1.41",
-=======
     "@rollup/rollup-win32-x64-msvc": "^4.32.0",
->>>>>>> origin/Aniket
     "chart.js": "^4.4.7",
     "dayjs": "^1.11.13",
     "framer-motion": "^12.0.3",
