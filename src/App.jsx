@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import StudentDashboard from './pages/StudentDashboard';
@@ -10,8 +11,10 @@ import AdminDashboard from './pages/AdminDashboard';
 import SuperAdminDashboard from './pages/SuperAdminDashboard';
 // import Student from './pages/Student';
 
+
 const App = () => {
   return (
+
     <Routes>
       <Route path="/" element={<StudentDashboard />} />
       {/* <Route path="/courses" element={<Courses />} /> */}
@@ -23,6 +26,7 @@ const App = () => {
       <Route path="/admin" element={<AdminDashboard />} />
       {/* <Route path="/student" element={<Student />} /> */}
     </Routes>
+
   );
 };
 

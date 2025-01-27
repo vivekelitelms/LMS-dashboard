@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import BaseLayout from "../layouts/BaseLayout";
 import React, { useState } from "react";
 import StatCard from "../components/StatCard";
@@ -12,6 +13,14 @@ import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import GraphCard from "../components/GraphCard";
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement);
+=======
+import React, { useState, useEffect } from "react";
+
+
+import BaseLayout from "../layouts/BaseLayout";
+import ProgressList from "../Tables/AdminTable";
+
+>>>>>>> origin/Aniket
 
 export default function AdminDashboard() {
   const [date, setDate] = useState(dayjs());
@@ -74,6 +83,7 @@ export default function AdminDashboard() {
   return (
     <BaseLayout>
       <h1 className="text-2xl font-bold mb-4">Admin Dashboard</h1>
+<<<<<<< HEAD
 
       {/* Main Grid Layout */}
       <div className="grid gap-6 lg:grid-cols-12 items-stretch">
@@ -151,6 +161,10 @@ export default function AdminDashboard() {
             <GraphCard title="Learning Plan Report" data={learningPlanData} options={options} />
           </div>
         </div>
+=======
+      <div>
+        <ProgressList/>
+>>>>>>> origin/Aniket
       </div>
     </BaseLayout>
   );
