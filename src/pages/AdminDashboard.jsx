@@ -4,13 +4,14 @@ import StatCard from "../components/StatCard";
 import QuickAction from "../components/QuickAction";
 import { FaUsers, FaTasks, FaBook } from "react-icons/fa";
 import { Pie } from "react-chartjs-2";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement } from "chart.js";
 import dayjs from "dayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
+import GraphCard from "../components/GraphCard";
 
-ChartJS.register(ArcElement, Tooltip, Legend);
+ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement);
 
 export default function AdminDashboard() {
   const [date, setDate] = useState(dayjs());
@@ -25,6 +26,49 @@ export default function AdminDashboard() {
         hoverBackgroundColor: ["#45A049", "#D9531A"],
       },
     ],
+  };
+
+   // Data for User Course Distribution
+   const userCourseData = {
+    labels: ["User 1", "User 2", "User 3", "User 4"],
+    datasets: [
+      {
+        label: "Number of Courses",
+        data: [5, 1, 2, 3],
+        backgroundColor: "rgba(54, 162, 235, 0.6)",
+      },
+    ],
+  };
+
+  // Data for Learning Plan Progress
+  const learningPlanData = {
+    labels: ["MY", "Video Editing"],
+    datasets: [
+      {
+        label: "Progress Percentage",
+        data: [0, 5],
+        backgroundColor: "rgba(255, 99, 132, 0.6)",
+      },
+    ],
+  };
+
+  // Shared Chart Options
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { beginAtZero: true },
+      y: { beginAtZero: true, max: 100, ticks: { stepSize: 50, callback: (value) => `${value}%` } },
+    },
+  };
+
+  const transcriptOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      x: { beginAtZero: true },
+      y: { beginAtZero: true, ticks: { stepSize: 1, precision: 0 } },
+    },
   };
 
   return (
@@ -99,6 +143,12 @@ export default function AdminDashboard() {
                 onClick={() => alert("View Users")}
               />
             </div>
+          </div>
+        </div>
+        <div className="lg:col-span-12 pt-4">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <GraphCard title="Transcript Report" data={userCourseData} options={transcriptOptions} />
+            <GraphCard title="Learning Plan Report" data={learningPlanData} options={options} />
           </div>
         </div>
       </div>
