@@ -1,17 +1,18 @@
-import BaseLayout from "../layouts/BaseLayout";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import StatCard from "../components/StatCard";
 import QuickAction from "../components/QuickAction";
 import { FaUsers, FaTasks, FaBook } from "react-icons/fa";
 import { Pie, Bar } from "react-chartjs-2";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, TimeScale, scales } from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, TimeScale } from "chart.js";
+import "chartjs-adapter-date-fns";
 import dayjs from "dayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import GraphCard from "../components/GraphCard";
-import 'chartjs-adapter-date-fns';
-import { title } from "framer-motion/client";
+import BaseLayout from "../layouts/BaseLayout";
+import ComplianceReport from "../Tables/ComplianceReport";
+
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, TimeScale);
 
@@ -357,11 +358,11 @@ export default function AdminDashboard() {
                 <Bar data={complianceData} options={complianceOptions} />
               </div>
             </div>
-
-
+            <ComplianceReport/>
           </div>
         </div>
       </div>
     </BaseLayout>
+
   );
 }
