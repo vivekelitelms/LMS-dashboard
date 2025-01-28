@@ -12,6 +12,8 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import TranscriptReport from "../Tables/TranscriptReport";
+import LearningPlanReport from "../Tables/LearningPlanReport";
+import ComplianceReport from "../Tables/ComplianceReport";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -148,10 +150,14 @@ export default function AdminDashboard() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="flex w-full">
+      <div className="w-1/2">
 
         <TranscriptReport/>
       </div>
+      <div className="w-1/2"><LearningPlanReport/></div>
+      </div>
+      <div><ComplianceReport/></div>
     </BaseLayout>
   );
 }
