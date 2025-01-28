@@ -11,6 +11,10 @@ export default defineConfig({
       plugins: [tailwindcss, autoprefixer],
     },
   },
+  
+  optimizeDeps: {
+    include: ['react-chartjs-2', 'chart.js'],
+  },
 
   server: {
     host: '0.0.0.0', // Allows access from the local network
