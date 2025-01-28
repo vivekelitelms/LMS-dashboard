@@ -15,6 +15,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Allows access from the local network
     port: 5173,      // Default port
+    allowedHosts: ['pd53yj-5173.csb.app']
   },
 
   build: {
