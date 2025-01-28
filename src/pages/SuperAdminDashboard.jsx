@@ -1,12 +1,24 @@
 import React from "react";
-
-
 import BaseLayout from "../layouts/BaseLayout";
 import { Card } from "../components/Card";
 import { FaClipboardList, FaFileAlt, FaClock, FaTimesCircle } from "react-icons/fa";
 import ActiveList from "../Tables/ActiveList";
 
 export default function SuperAdminDashboard() {
+
+  const analyticsData = {
+    labels: ["Completed", "Pending", "In Progress"],
+    datasets: [
+      {
+        label: "Course Progress",
+        data: [10, 5, 15], // Example data
+        backgroundColor: ["#4CAF50", "#FFCE56", "#36A2EB"],
+        hoverBackgroundColor: ["#45A049", "#FFCE56", "#36A2EB"],
+      },
+    ],
+  };
+
+
   return (
     <BaseLayout>
       <h1 className="text-2xl font-bold mb-4">Super Admin Dashboard</h1>
@@ -43,7 +55,9 @@ export default function SuperAdminDashboard() {
           bgColor="bg-red-500/50"
         />
       </div>
-      <div><ActiveList/></div>
+      <div>
+        <ActiveList/>
+      </div>
     </BaseLayout>
   );
 }
