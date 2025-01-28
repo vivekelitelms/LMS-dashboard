@@ -16,4 +16,11 @@ export default defineConfig({
     host: '0.0.0.0', // Allows access from the local network
     port: 5173,      // Default port
   },
+
+  build: {
+    rollupOptions: {
+      // Externalize dependencies that should not be bundled
+      external: ['react-chartjs-2'],
+    },
+  },
 })
