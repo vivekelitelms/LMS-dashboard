@@ -4,6 +4,7 @@ import React from "react";
 import BaseLayout from "../layouts/BaseLayout";
 import { Card } from "../components/Card";
 import { FaClipboardList, FaFileAlt, FaClock, FaTimesCircle } from "react-icons/fa";
+import ActiveList from "../Tables/ActiveList";
 
 export default function SuperAdminDashboard() {
   return (
@@ -42,6 +43,7 @@ export default function SuperAdminDashboard() {
           bgColor="bg-red-500/50"
         />
       </div>
+      <div><ActiveList/></div>
     </BaseLayout>
   );
 }
