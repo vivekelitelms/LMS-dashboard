@@ -12,6 +12,8 @@ import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import GraphCard from "../components/GraphCard";
 import BaseLayout from "../layouts/BaseLayout";
 import ComplianceReport from "../Tables/ComplianceReport";
+import TranscriptReport from "../Tables/TranscriptReport";
+import LearningPlanReport from "../Tables/LearningPlanReport";
 
 
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, TimeScale);
@@ -359,7 +361,10 @@ export default function AdminDashboard() {
               </div>
             </div>
             <ComplianceReport/>
+            <TranscriptReport/>
+            <LearningPlanReport/>
           </div>
+          
         </div>
       </div>
     </BaseLayout>

@@ -29,6 +29,14 @@ const transcriptData = [
         course: "Computer Science  301",
         status: "Completed",
       },
+
+      {
+        id: 5,
+        studentInitial: "S5",
+        studentName: "Student 5",
+        course: "Geography  307",
+        status: "Ongoing",
+      },
   ];
   
   export default transcriptData;

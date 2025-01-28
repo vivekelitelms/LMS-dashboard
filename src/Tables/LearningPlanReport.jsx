@@ -7,7 +7,7 @@ export default function LearningPlanReport() {
     <div>
       <div className="max-w-5xl h-full ml-5 mt-10 pt-5 relative rounded-xl">
         <div className="flex relative mr-5">
-          <FaGraduationCap className="ml-5  hover:scale-105 text-blue-500" size={30} />
+          <FaGraduationCap className="ml-5  hover:scale-105 text-blue-500" size={50} />
           <h2 className="text-xl ml-5 font-semibold mb-5">Learning Plan Report</h2>
         </div>
 

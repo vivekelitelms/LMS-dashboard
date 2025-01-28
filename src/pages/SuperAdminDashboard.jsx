@@ -2,6 +2,7 @@ import React from "react";
 import BaseLayout from "../layouts/BaseLayout";
 import { Card } from "../components/Card";
 import { FaClipboardList, FaFileAlt, FaClock, FaTimesCircle } from "react-icons/fa";
+import ActiveList from "../Tables/ActiveList";
 import { Pie } from "react-chartjs-2";
 
 
@@ -57,6 +58,7 @@ export default function SuperAdminDashboard() {
         />
       </div>
       <div className="lg:col-span-12 pt-4">
+          <ActiveList/>
         <div className="p-6 bg-white shadow-md rounded-xl w-full mt-6">
           <h3 className="font-semibold text-lg mb-4">Analytics</h3>
           <div className="w-full h-64">
@@ -64,6 +66,7 @@ export default function SuperAdminDashboard() {
           </div>
         </div>
       </div>
+      
     </BaseLayout>
   );
 }
