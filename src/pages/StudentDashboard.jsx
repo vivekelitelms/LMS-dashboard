@@ -3,6 +3,9 @@ import BaseLayout from "../layouts/BaseLayout";
 import { Card, CourseCard} from "../components/Card";
 import { FaClipboardList, FaFileAlt, FaClock, FaTimesCircle } from "react-icons/fa";
 import CourseList from "../Tables/CourseList";
+import LottieIcon from '../assets/LottieIcon';
+import bookAnimation from '../assets/book-animation.json';
+
 
 export default function StudentDashboard() {
   return (
@@ -12,7 +15,7 @@ export default function StudentDashboard() {
       <div className="grid grid-cols-1 ml-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {/* Card for Total Requirements */}
         <Card
-          logo={<FaClipboardList size={24} />}
+          logo={<LottieIcon className="w-15 h-15 " animation={bookAnimation}/>}
           count="32"
           text="Total Requirements"
           bgColor="bg-blue-500/50"

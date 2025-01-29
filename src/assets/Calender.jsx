@@ -16,7 +16,7 @@ const CalendarComponent = () => {
       {/* Calendar Icon */}
       <button
         onClick={toggleCalendar}
-        className=" p-2 rounded-full text-white bg-blue-500 hover:bg-blue-600 focus:outline-none hover:scale-105 transform transition-all"
+        className=" p-2 rounded-full text-white bg-green-500 hover:bg-green-600 focus:outline-none hover:scale-105 transform transition-all"
       >
         <HiOutlineCalendar className="w-6 h-6" />
       </button>

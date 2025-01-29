@@ -4,6 +4,8 @@ import Icons from '../IconsRow';
 import Profile from './Profile';
 import Calendar from 'react-calendar';
 import CalendarComponent from '../assets/Calender';
+import Lottie from 'lottie-react';
+import animationData from '../assets/settings-animation.json'
 
 const Header = () => {
   return (
@@ -16,19 +18,19 @@ const Header = () => {
         <div className="flex gap-6 z-10">
         <Link to="/super-admin">
           <div
-            className="text-black shadow-xs font-bold py-2 px-4 bg-transparent border-2 border-purple/10 rounded-xl cursor-pointer transition-all hover:bg-purple-500 hover:text-white">
+            className="text-black shadow-xs font-bold py-2 px-4 bg-transparent border-2 border-purple/10 rounded-xl cursor-pointer transition-all hover:bg-purple-200 hover:text-black transition-shadow hover:shadow-lg">
             Super Admin
           </div>
           </Link>
           <Link to="/admin">
           <div
-            className="text-black shadow-xs font-bold py-2 px-4 bg-transparent border-2 border-purple/10 rounded-xl cursor-pointer transition-all hover:bg-purple-500 hover:text-white">
+            className="text-black shadow-xs font-bold py-2 px-4 bg-transparent border-2 border-purple/10 rounded-xl cursor-pointer transition-all hover:bg-purple-200 hover:text-black transition-shadow hover:shadow-lg">
             Admin
           </div>
           </Link>
           <Link to="/">
           <div
-            className="text-black shadow-xs font-bold py-2 px-4 bg-transparent border-2 border-purple/10 rounded-xl cursor-pointer transition-all hover:bg-purple-500 hover:text-white">
+            className="text-black shadow-xs font-bold py-2 px-4 bg-transparent border-2 border-purple/10 rounded-xl cursor-pointer transition-all hover:bg-purple-200 hover:text-black transition-shadow hover:shadow-lg">
             Student
           </div>
           </Link>
@@ -39,10 +41,10 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search..."
-            className="p-2 border-2 border-gray-300 rounded-2xl outline-none"
+            className="p-2 shadow-md border-2 border-gray-300 rounded-2xl outline-none hover:scale-105 transform duration-200"
           />
           <div
-            className="py-2 px-4 bg-purple-500 text-white rounded-2xl cursor-pointer transition-all hover:bg-gray-400">
+            className=" shadow-md py-2 px-4 bg-purple-200 text-black rounded-2xl cursor-pointer transition-all hover:bg-gray-400 transition-shadow hover:shadow-lg">
             Search
           </div>
          

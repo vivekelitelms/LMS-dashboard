@@ -257,15 +257,16 @@ export default function AdminDashboard() {
       <h1 className="text-2xl font-bold mb-4">Admin Dashboard</h1>
 
       {/* Main Grid Layout */}
-      <div className="grid gap-6 lg:grid-cols-12 items-stretch">
+      <div className="grid gap-6 lg:grid-cols-12 items-stretch ">
         {/* Stats Section */}
-        <div className="grid gap-6 lg:col-span-3">
+        <div className="grid gap-6 lg:col-span-3 ">
           <StatCard
             title="Active Users"
             value="4"
             icon={<FaUsers />}
             bgColor="bg-blue-500"
             textColor="text-blue-500"
+
           />
           <StatCard
             title="Assigned"
@@ -293,7 +294,7 @@ export default function AdminDashboard() {
           </div>
           </div>
           {/* Calendar Section */}
-          <div className="bg-white p-6 rounded-lg shadow-md w-full">
+          <div className="bg-stone-200 p-6 rounded-lg shadow-md w-full transition-shadow hover:shadow-xl">
             <h3 className="text-xl font-bold mb-4">Calendar</h3>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateCalendar
