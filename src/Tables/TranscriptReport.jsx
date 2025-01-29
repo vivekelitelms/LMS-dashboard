@@ -27,7 +27,7 @@ export default function TranscriptReport() {
             >
               {/* Student Name */}
               <div className="flex items-center gap-4 w-1/3">
-                <div className="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                <div className="w-10 h-10 bg-teal-400 text-white rounded-full flex items-center justify-center font-bold">
                   {item.studentInitial}
                 </div>
                 <span className="font-medium">{item.studentName}</span>
