@@ -5,6 +5,8 @@ import { FaClipboardList, FaFileAlt, FaClock, FaTimesCircle } from "react-icons/
 import CourseList from "../Tables/CourseList";
 import LottieIcon from '../assets/LottieIcon';
 import bookAnimation from '../assets/book-animation.json';
+import clockAnimation from '../assets/clock-animation.json';
+import errorAnimation from '../assets/error-animation.json';
 
 
 export default function StudentDashboard() {
@@ -31,7 +33,7 @@ export default function StudentDashboard() {
 
         {/* Card for Overdue Courses */}
         <Card
-          logo={<FaClock size={24} />}
+          logo={<LottieIcon className="w-20 h-20 " animation={clockAnimation}/>}
           count="7"
           text="Overdue Courses"
           bgColor="bg-yellow-500/50"
@@ -39,7 +41,7 @@ export default function StudentDashboard() {
 
         {/* Card for Expired Courses */}
         <Card
-          logo={<FaTimesCircle size={24} />}
+          logo={<LottieIcon className="w-20 h-20 " animation={errorAnimation}/>}
           count="4"
           text="Course Expired"
           bgColor="bg-red-500/50"

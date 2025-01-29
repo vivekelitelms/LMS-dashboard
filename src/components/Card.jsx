@@ -5,7 +5,7 @@ import { FaBook, FaClipboardList, FaCheckCircle, FaTimesCircle } from "react-ico
 const Card = ({ logo, count, text, bgColor }) => {
   return (
     <div className="flex flex-col items-center bg-[#D4E7C5]/20 shadow-md rounded-lg p-5 w-full max-w-xs h-64 transform transition-transform duration-300 hover:scale-105">
-      <div className={`h-16 w-16 flex items-center justify-center rounded-full ${bgColor} text-white mb-4`}>
+      <div className={`h-20 w-20 flex items-center justify-center rounded-full ${bgColor} text-white mb-4`}>
         {logo}
       </div>
       <p className="text-2xl font-bold pt-4 text-center">{count}</p>
