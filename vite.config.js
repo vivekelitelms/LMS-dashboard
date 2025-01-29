@@ -5,6 +5,7 @@ import autoprefixer from 'autoprefixer'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/LMSdashboard/',
   plugins: [react()],
   css: {
     postcss: {
@@ -20,7 +21,11 @@ export default defineConfig({
 
   build: {
     rollupOptions: {
-      // Externalize dependencies that should not be bundled
+      input: {
+        // Externalize dependencies that should not be bundled
+        main: 'src/main.jsx',
+        // Add other entry points if needed
+      },
       external: ['react-chartjs-2'],
     },
   },

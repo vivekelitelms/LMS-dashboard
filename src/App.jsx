@@ -10,6 +10,8 @@ import StudentDashboard from './pages/StudentDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import SuperAdminDashboard from './pages/SuperAdminDashboard';
 // import Student from './pages/Student';
+import './App.css';
+import './index.css';
 
 
 const App = () => {

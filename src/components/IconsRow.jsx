@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaUser, FaBell, FaEnvelope, FaQuestionCircle } from 'react-icons/fa'; // Importing necessary icons from react-icons
 
 
