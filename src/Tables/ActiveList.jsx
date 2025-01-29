@@ -58,7 +58,7 @@ export default function ActiveList() {
             <h2 className="text-2xl font-bold mb-5 ">Active Users</h2>
             <ul className="space-y-4">
               {/* Column Headings */}
-              <li className="font-bold flex items-center justify-between p-8 shadow-lg rounded-lg bg-lime-300">
+              <li className="font-bold flex items-center justify-between p-8 shadow-lg rounded-lg bg-blue-300">
                 <div className="w-1/4 font-medium">Organisation Name</div>
                 <div className="w-1/4 text-center font-medium">Total Users</div>
                 <div className="w-1/4 text-center font-medium">
@@ -74,7 +74,7 @@ export default function ActiveList() {
                 <li
                   key={item.id}
                   className="flex items-center justify-between mt-5 p-6 border border-gray-300 
-                rounded-lg shadow-lg hover:scale-105 transition transform duration-200 bg-lime-100"
+                rounded-lg shadow-lg hover:scale-105 transition transform duration-200 bg-blue-100"
                 >
                   <div className="w-1/4">{item.organisationName}</div>
                   <div className="w-1/4 text-center">{item.totalUsers}</div>
@@ -94,7 +94,7 @@ export default function ActiveList() {
           <h2 className="text-2xl font-semibold mb-5">Active Courses</h2>
           <ul className="space-y-4">
             {/* Placeholder for Active Courses */}
-            <li className="font-bold flex items-center justify-center p-8 shadow-md rounded-lg bg-blue-300">
+            <li className="font-bold flex items-center justify-center p-8 shadow-md rounded-lg bg-lime-300">
             <div className="w-1/4 font-medium">Course Name</div>
               <div className="w-1/4 text-center font-medium">Total Users</div>
               <div className="w-1/4 text-center font-medium">Active Users</div>
@@ -106,7 +106,7 @@ export default function ActiveList() {
                 <li
                   key={item.id}
                   className="flex items-center justify-between mt-5 p-6 border border-gray-300 
-                rounded-lg shadow-lg hover:scale-105 transition transform duration-200 bg-blue-100"
+                rounded-lg shadow-lg hover:scale-105 transition transform duration-200 bg-lime-100"
                 >
                   <div className="w-1/4">{item.courseName}</div>
                   <div className="w-1/4 text-center">{item.totalCourses}</div>

@@ -1,8 +1,7 @@
 // Sidebar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LottieIcon from '../assets/LottieIcon';
-import settingsAnimation from '../assets/settings-animation.json'
+import { FaCog } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
@@ -32,7 +31,7 @@ const Sidebar = () => {
         <h2 className="text-lg font-semibold mb-4">Settings</h2>
         <ul className="space-y-3">
           <li className="py-2 px-4 rounded-2xl cursor-pointer  hover:text-black transition-all transition-shadow hover:shadow-lg">
-          <LottieIcon className="w-8 h-8 " animation={settingsAnimation} />  {/* Settings Icon */}
+          <FaCog className="w-6 h-6 text-black  hover:scale-105 transform transition-all " />
           
           </li>
           <li
