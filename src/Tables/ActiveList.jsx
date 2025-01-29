@@ -90,7 +90,7 @@ export default function ActiveList() {
           <h2 className="text-2xl font-semibold mb-5">Active Courses</h2>
           <ul className="space-y-4">
             {/* Placeholder for Active Courses */}
-            <li className="font-bold flex items-center justify-center p-6 shadow-md rounded-lg">
+            <li className="font-bold flex items-center justify-center p-8 shadow-md rounded-lg">
             <div className="w-1/4 font-medium">Course Name</div>
               <div className="w-1/4 text-center font-medium">Total Users</div>
               <div className="w-1/4 text-center font-medium">Active Users</div>
