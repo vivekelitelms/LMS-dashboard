@@ -2,7 +2,7 @@
 .profile-container {
     margin:.5% ;
     position: fixed; /* Fixed positioning to always show at the top-right */
-    top: 4px;
+    top: 12px;
     right: 25px;
     width: 40px;  /* Size of the circle */
     height: 40px; /* Size of the circle */
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #bfdbfe; /* Background color (can change to any color) */
+    background-color: white; /* Background color (can change to any color) */
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
     cursor: pointer;  /* Makes it clickable */
     transition: transform 0.2s ease-in-out; /* Smooth scale effect on hover */
@@ -33,7 +33,7 @@
     flex-direction: row;
     margin: 1%;
     position: fixed;
-    top: 2px;
+    top: 12px;
     right: 5%;
     
   }
