@@ -16,7 +16,7 @@ export default function StudentDashboard() {
           logo={<FaClipboardList size={28}/>}
           count="32"
           text="Total Requirements"
-          bgColor="bg-blue-800"
+          bgColor="bg-gradient-to-br from-blue-600 to-gray-400"
         />
         
         {/* Card for Total Transcripts */}
@@ -24,7 +24,7 @@ export default function StudentDashboard() {
           logo={<FaFileAlt size={28} />}
           count="18"
           text="Total Transcripts"
-          bgColor="bg-green-800"
+          bgColor="bg-gradient-to-br from-green-800 to-brown-600"
         />
 
         {/* Card for Overdue Courses */}
@@ -32,7 +32,7 @@ export default function StudentDashboard() {
           logo={<FaClock size={28}/>}
           count="7"
           text="Overdue Courses"
-          bgColor="bg-yellow-800"
+          bgColor="bg-gradient-to-br from-yellow-600 to-purple-600"
         />
 
         {/* Card for Expired Courses */}

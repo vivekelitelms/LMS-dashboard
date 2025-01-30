@@ -308,7 +308,7 @@ export default function AdminDashboard() {
 
         {/* Quick Actions Section */}
         <div className="col-span-3">
-          <div className="p-6 bg-white shadow-md h-full rounded-xl">
+          <div className="p-6 bg-gradient-to-br from-[#F8F6F4] to-[#E8DCCA] shadow-md h-full rounded-xl">
             <h3 className="font-semibold text-lg mb-4">Quick Actions</h3>
             <div className="grid gap-4 grid-cols-1 py-6">
               <QuickAction label="Add User" onClick={() => alert("Add User")} />
