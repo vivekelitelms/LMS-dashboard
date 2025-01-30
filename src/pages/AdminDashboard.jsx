@@ -104,7 +104,7 @@ export default function AdminDashboard() {
       {/* Main Grid Layout */}
       <div className="grid gap-6 lg:grid-cols-12 items-stretch ">
         {/* Stats Section */}
-        <div className="grid gap-6 lg:col-span-3 ">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:col-span-3">
           <StatCard
             title="Active Users"
             value="4"
@@ -267,6 +267,7 @@ export default function AdminDashboard() {
             innerRadius={0.5}
             padAngle={1}
             cornerRadius={5}
+            activeOuterRadiusOffset={8}
             colors={{ datum: "data.color" }}
             borderWidth={1}
             borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}
@@ -356,6 +357,7 @@ export default function AdminDashboard() {
                   innerRadius={0.5}
                   padAngle={1}
                   cornerRadius={5}
+                  activeOuterRadiusOffset={8}
                   colors={{ datum: "data.color" }}
                   borderWidth={1}
                   borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}

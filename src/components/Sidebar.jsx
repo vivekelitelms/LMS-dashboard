@@ -1,11 +1,35 @@
 // Sidebar.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaCog } from "react-icons/fa";
+import { BurgerSwipe } from "react-burger-icons";
 
-const Sidebar = () => {
+
+const Sidebar = ({ isOpen, toggleSidebar }) => { 
+  
   return (
-    <div className="flex flex-col justify-between w-64 h-full bg-blue-200 text-black p-5 m-3 shadow-lg fixed top-0 left-0 rounded-2xl">
+    <>
+    {/* Burger Menu Button */}
+    <button
+        onClick={toggleSidebar}
+        className="fixed top-4 left-4 z-50 bg-transparent p-3 rounded-full shadow-lg"
+      >
+        {/* Change color using inline styles */}
+        <BurgerSwipe
+          isClosed={!isOpen}
+          size={30}
+          color={isOpen ? 'green' : 'black'}
+        />
+      </button>
+
+
+    {/* Sidebar */}
+    <div className={`fixed top-0 left-0 h-full bg-blue-200 text-black p-5 shadow-lg rounded-2xl transition-all duration-300 ${
+  isOpen ? "w-64" : "w-0 overflow-hidden"
+}`}  style={{ padding: isOpen ? "1.25rem" : "0", borderWidth: isOpen ? "2px" : "0" }}>
+
+      {isOpen && (
+    <div className="flex flex-col justify-between w-64 h-full bg-transparent text-black p-5 m-3 shadow-lg fixed top-0 left-0 rounded-2xl">
       <h1 className="text-2xl font-bold text-purple-500 mb-6">LMS</h1>
 
       <h2 className="text-lg font-semibold mb-4">Overview</h2>
@@ -42,6 +66,9 @@ const Sidebar = () => {
         </ul>
       </div>
     </div>
+     )}
+     </div>
+   </>
   );
 };
 

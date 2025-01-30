@@ -52,7 +52,7 @@ const Header = () => {
         <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
         
 
-        <diV className="fixed"><Profile/></diV>
+        <div className="fixed"><Profile/></div>
 
       </div>
     
