@@ -140,6 +140,7 @@ export default function AdminDashboard() {
           innerRadius={0.5}
           padAngle={2}
           cornerRadius={5}
+          activeOuterRadiusOffset={8}
           colors={{ datum: "data.color" }}
           borderWidth={2}
           borderColor={{ from: "color", modifiers: [["darker", 0.6]] }}
@@ -148,7 +149,7 @@ export default function AdminDashboard() {
           arcLinkLabelsThickness={2}
           arcLinkLabelsColor={{ from: "color" }}
           arcLabelsSkipAngle={10}
-          arcLabelsTextColor={{ from: "color", modifiers: [["darker", 2]] }}
+          arcLabelsTextColor="#545333"
         />
       </div>
     </div>
