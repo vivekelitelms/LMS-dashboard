@@ -135,7 +135,7 @@ export default function AdminDashboard() {
           <div className="p-6 bg-white shadow-md rounded-xl">
             <h3 className="font-semibold text-lg mb-4">Company Overview</h3>
             <div className="w-full h-64">
-            <Pie data={data} />
+            <ResponsivePie data={data} />
           </div>
           </div>
           {/* Calendar Section */}

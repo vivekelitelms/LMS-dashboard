@@ -69,7 +69,7 @@ export default function SuperAdminDashboard() {
         <div className="p-6 bg-white shadow-md rounded-xl w-full mt-6">
           <h3 className="font-semibold text-lg mb-4">Analytics</h3>
           <div className="w-full h-64">
-            <Pie data={analyticsData} />
+            <ResponsivePie data={analyticsData} />
           </div>
         </div>
       </div>
