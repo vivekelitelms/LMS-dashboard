@@ -294,7 +294,7 @@ export default function AdminDashboard() {
           </div>
           </div>
           {/* Calendar Section */}
-          <div className="bg-stone-200 p-6 rounded-lg shadow-md w-full transition-shadow hover:shadow-xl">
+          <div className="bg-gradient-to-br from-stone-200 to-rose-200 p-6 rounded-lg shadow-md w-full transition-shadow hover:shadow-xl">
             <h3 className="text-xl font-bold mb-4">Calendar</h3>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateCalendar

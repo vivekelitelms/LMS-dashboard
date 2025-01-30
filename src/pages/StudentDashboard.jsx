@@ -13,38 +13,38 @@ export default function StudentDashboard() {
       <div className="grid grid-cols-1 ml-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {/* Card for Total Requirements */}
         <Card
-          logo={<FaClipboardList size={24}/>}
+          logo={<FaClipboardList size={28}/>}
           count="32"
           text="Total Requirements"
-          bgColor="bg-blue-500/50"
+          bgColor="bg-blue-800"
         />
         
         {/* Card for Total Transcripts */}
         <Card
-          logo={<FaFileAlt size={24} />}
+          logo={<FaFileAlt size={28} />}
           count="18"
           text="Total Transcripts"
-          bgColor="bg-green-500/50"
+          bgColor="bg-green-800"
         />
 
         {/* Card for Overdue Courses */}
         <Card
-          logo={<FaClock size={24}/>}
+          logo={<FaClock size={28}/>}
           count="7"
           text="Overdue Courses"
-          bgColor="bg-yellow-500/50"
+          bgColor="bg-yellow-800"
         />
 
         {/* Card for Expired Courses */}
         <Card
-          logo={<FaTimesCircle  size={24}/>}
+          logo={<FaTimesCircle  size={28}/>}
           count="4"
           text="Course Expired"
-          bgColor="bg-red-500/50"
+          bgColor="bg-gradient-to-br from-[#9e1b32] to-[#D83F52]"
         />
       </div>
       <h2 className="text-xl font-bold mt-8 ml-4 mb-4">Courses</h2>
-        <div className="grid grid-cols-1 ml-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+        <div className="  grid grid-cols-1 ml-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
           {/* New Course Cards */}
           <CourseCard
             courseName="Course 1"
