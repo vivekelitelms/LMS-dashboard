@@ -10,7 +10,7 @@ export default function StudentDashboard() {
     <BaseLayout>
     <>
       <h1 className="text-2xl font-bold ml-4 mb-6">Student Dashboard</h1>
-      <div className="grid grid-cols-1 ml-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid ml-2 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {/* Card for Total Requirements */}
         <Card
           logo={<FaClipboardList size={28}/>}

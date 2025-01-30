@@ -1,30 +1,37 @@
 import React from "react";
 import BaseLayout from "../layouts/BaseLayout";
 import { Card } from "../components/Card";
-import { FaClipboardList, FaFileAlt, FaClock, FaTimesCircle,FaExclamationCircle} from "react-icons/fa";
+import { FaClipboardList, FaFileAlt, FaClock, FaTimesCircle,FaExclamationCircle } from "react-icons/fa";
 import ActiveList from "../Tables/ActiveList";
-import { Pie } from "react-chartjs-2";
-
+import { ResponsivePie } from "@nivo/pie";
 
 export default function SuperAdminDashboard() {
-
-  const analyticsData = {
-    labels: ["Completed", "Pending", "In Progress"],
-    datasets: [
-      {
-        label: "Course Progress",
-        data: [10, 5, 15], // Example data
-        backgroundColor: ["#4CAF50", "#FFCE56", "#36A2EB"],
-        hoverBackgroundColor: ["#45A049", "#FFCE56", "#36A2EB"],
-      },
-    ],
-  };
-
+  // Pie chart data
+  const analyticsData = [
+    {
+      id: "Category A",
+      label: "Category A",
+      value: 40,
+      color: "#FF6384",
+    },
+    {
+      id: "Category B",
+      label: "Category B",
+      value: 30,
+      color: "#36A2EB",
+    },
+    {
+      id: "Category C",
+      label: "Category C",
+      value: 30,
+      color: "#FFCE56",
+    },
+  ];
 
   return (
     <BaseLayout>
       <h1 className="text-2xl font-bold mb-4">Super Admin Dashboard</h1>
-      <div className="grid grid-cols-1 ml-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid ml-2 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {/* Card for Total Requirements */}
         <Card
           logo={<FaClipboardList size={30} />}
@@ -32,7 +39,7 @@ export default function SuperAdminDashboard() {
           text="Total Requirements"
           bgColor="bg-gradient-to-br from-orange-300 to-teal-950"
         />
-        
+
         {/* Card for Total Transcripts */}
         <Card
           logo={<FaFileAlt size={30} />}
@@ -59,14 +66,13 @@ export default function SuperAdminDashboard() {
       </div>
       <div className="lg:col-span-12 pt-4">
           <ActiveList/>
-        <div className="p-6   shadow-md rounded-xl w-auto mt-6">
+        <div className="p-6 bg-white shadow-md rounded-xl w-full mt-6">
           <h3 className="font-semibold text-lg mb-4">Analytics</h3>
-          <div className="w-auto h-64">
+          <div className="w-full h-64">
             <Pie data={analyticsData} />
           </div>
         </div>
       </div>
-      
     </BaseLayout>
   );
 }
