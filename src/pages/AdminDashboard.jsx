@@ -104,7 +104,7 @@ export default function AdminDashboard() {
       {/* Main Grid Layout */}
       <div className="grid gap-6 lg:grid-cols-12 items-stretch ">
         {/* Stats Section */}
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:col-span-3">
+        <div className="grid gap-6 lg:col-span-3">
           <StatCard
             title="Active Users"
             value="4"
