@@ -154,7 +154,7 @@ export default function AdminDashboard() {
       </div>
     </div>
           {/* Calendar Section */}
-          <div className="bg-stone-200 p-6 rounded-lg shadow-md w-full transition-shadow hover:shadow-xl">
+          <div className="bg-gradient-to-br from-stone-200 to-rose-200 p-6 rounded-lg shadow-md w-full transition-shadow hover:shadow-xl">
             <h3 className="text-xl font-bold mb-4">Calendar</h3>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateCalendar
@@ -168,7 +168,7 @@ export default function AdminDashboard() {
 
         {/* Quick Actions Section */}
         <div className="col-span-3">
-          <div className="p-6 bg-white shadow-md h-full rounded-xl">
+          <div className="p-6 bg-gradient-to-br from-[#F8F6F4] to-[#E8DCCA] shadow-md h-full rounded-xl">
             <h3 className="font-semibold text-lg mb-4">Quick Actions</h3>
             <div className="grid gap-4 grid-cols-1 py-6">
               <QuickAction label="Add User" onClick={() => alert("Add User")} />
