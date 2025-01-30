@@ -6,7 +6,8 @@ import { FaCog } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <div className="flex flex-col justify-between w-64 h-full bg-gradient-to-br from-[#F3E9E8] to-[#96B9D9] text-black p-5 m-3 shadow-lg fixed top-0 left-0 rounded-2xl">
-      <h1 className="text-2xl font-bold text-purple-500 mb-6">LMS</h1>
+      <h1 className="text-3xl font-bold mb-6
+      bg-gradient-to-r from-violet-400 to-purple-800 bg-clip-text text-transparent">LMS</h1>
 
       <h2 className="text-lg font-semibold mb-4">Overview</h2>
       <ul className="space-y-3">
