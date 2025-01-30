@@ -264,37 +264,38 @@ export default function AdminDashboard() {
             title="Active Users"
             value="4"
             icon={<FaUsers />}
-            bgColor="bg-blue-500"
-            textColor="text-blue-500"
+            bgColor="bg-gradient-to-br from-blue-500 to-amber-200"
+            textColor="text-black"
 
           />
           <StatCard
             title="Assigned"
             value="46"
             icon={<FaTasks />}
-            bgColor="bg-red-500"
-            textColor="text-red-500"
+            bgColor="bg-gradient-to-br from-red-500 to-amber-200"
+            textColor="text-black"
           />
           <StatCard
             title="Courses"
             value="8"
             icon={<FaBook />}
-            bgColor="bg-green-500"
-            textColor="text-green-500"
+            bgColor="bg-gradient-to-br from-green-500 to-amber-200"
+            textColor="text-black"
           />
         </div>
 
         {/* Chart and Calendar */}
         <div className="grid gap-6 lg:col-span-6 lg:grid-cols-2">
           {/* Chart Section */}
-          <div className="p-6 bg-white shadow-md rounded-xl">
+          <div className="p-6  shadow-md rounded-xl bg-gradient-to-br from-[#F8F6F4] to-[#E8DCCA]">
             <h3 className="font-semibold text-lg mb-4">Company Overview</h3>
             <div className="w-full h-64">
             <Pie data={data} />
           </div>
           </div>
           {/* Calendar Section */}
-          <div className="bg-gradient-to-br from-stone-200 to-rose-200 p-6 rounded-lg shadow-md w-full transition-shadow hover:shadow-xl">
+          <div className="bg-gradient-to-br from-[#F8F6F4] to-[#E8DCCA] 
+            p-6 rounded-lg shadow-md w-full transition-shadow hover:shadow-xl">
             <h3 className="text-xl font-bold mb-4">Calendar</h3>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateCalendar
