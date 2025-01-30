@@ -64,7 +64,7 @@ const Header = () => {
         <div ></div>
         
 
-        <diV className=" relative items-center"><Profile/></diV>
+        <div className=" relative items-center"><Profile/></div>
 
       </div>
     
