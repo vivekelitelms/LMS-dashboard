@@ -5,7 +5,7 @@ const CourseProgressList = ({ courses }) => {
         {courses.map((course, index) => (
           <div
             key={index}
-            className="m-6 flex items-center justify-between border-b pb-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
+            className="m-6 flex items-center justify-between border-b pb-6 rounded-lg shadow-md hover:shadow-xl transition-shadow "
           >
             <div className="flex items-center space-x-4">
               <div className="text-lg font-medium ml-4">{course.name}</div>
